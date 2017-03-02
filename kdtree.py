@@ -46,6 +46,10 @@ class KDTree():
     >>> # Query all points with x between 0 and 10 and y between 0 and 3 (inclusive)
     >>> tree.query({"x":[0,10], "y":[0,3]})
     Statistics(sum=1, length=2)
+    >>> tree.query({"x":[0,10], "y":[0,10]})
+    Statistics(sum=2, length=3)
+    >>> tree.query({"x":[5,10], "y":[5,10]})
+    Statistics(sum=0, length=0)
     """
 
     def __init__(self, data, dimensions, objective, first_dimension=0):
@@ -78,9 +82,14 @@ class KDTree():
         if len(right) > 0:
             self.right = KDTree(right, dimensions, objective, first_dimension+1)
 
-    def query(self, query) -> Statistics:
+    def query(self, query: dict) -> Statistics:
         """Find statistics about the points that are in a specified region in
-        the K-dimensional space you defined
+        the K-dimensional space you defined.
+
+        arguments:
+        query -- A dict (or DataFrame), containing as keys the dimension names
+                 and as values arrays containing the min and max value for that dimension
+                 in the searched region.
         """
         query_dim = query[self.dimension]
 
