@@ -17,6 +17,7 @@ setup(
   version = '1.0',
   description = 'Efficient K-dimensional queries in python using KDTrees with pandas and numpy.',
   author = 'Ophir LOJKINE',
+  author_email = 'pere.jobs@gmail.com',
   url = 'https://github.com/lovasoa/kdsearch',
   download_url = 'https://github.com/lovasoa/kdsearch/archive/1.0.tar.gz',
   keywords = ['tree', 'search', 'query', 'bounding box', 'index', 'k-dimensional', 'dimesnions', 'data structure'],
