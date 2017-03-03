@@ -1,5 +1,6 @@
-# python-kdtree
-KDTree in python with pandas and numpy
+# KDSearch
+
+Efficient K-dimensional queries in python using KDTrees with pandas and numpy.
 
 [![Build Status](https://travis-ci.org/lovasoa/KDTree.svg?branch=master)](https://travis-ci.org/lovasoa/KDTree)
 
