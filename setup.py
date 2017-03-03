@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',

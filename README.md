@@ -10,9 +10,18 @@ Efficient K-dimensional queries in python using KDTrees with pandas and numpy.
  - numpy
  - pandas
 
+## Installation
+
+To install this package for the current user:
+
+```
+pip3 install --user kdsearch
+```
+
 ## example
 ```python
 import pandas
+from kdsearch import KDTree
 
 # We create a dataset with three points (1,3), (2,3) and (3,4)
 df = pandas.DataFrame({"x": [1,2,3], "y":[3,3,4], "target": [0,1,1]})
