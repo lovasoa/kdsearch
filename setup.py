@@ -1,5 +1,7 @@
 from setuptools import setup
 
+VERSION = '1.1'
+
 CLASSIFIERS = [
     'Development Status :: 5 - Production/Stable',
     'Environment :: Console',
@@ -14,12 +16,12 @@ CLASSIFIERS = [
 setup(
   name = 'kdsearch',
   packages = ['kdsearch'], # this must be the same as the name above
-  version = '1.0',
+  version = VERSION,
   description = 'Efficient K-dimensional queries in python using KDTrees with pandas and numpy.',
   author = 'Ophir LOJKINE',
   author_email = 'pere.jobs@gmail.com',
   url = 'https://github.com/lovasoa/kdsearch',
-  download_url = 'https://github.com/lovasoa/kdsearch/archive/1.0.tar.gz',
+  download_url = 'https://github.com/lovasoa/kdsearch/archive/%s.tar.gz' % (VERSION,),
   keywords = ['tree', 'search', 'query', 'bounding box', 'index', 'k-dimensional', 'dimesnions', 'data structure'],
   classifiers = CLASSIFIERS,
 )
