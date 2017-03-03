@@ -3,6 +3,12 @@ KDTree in python with pandas and numpy
 
 [![Build Status](https://travis-ci.org/lovasoa/KDTree.svg?branch=master)](https://travis-ci.org/lovasoa/KDTree)
 
+## Requirements
+
+ - python 3.5+
+ - numpy
+ - pandas
+
 ## example
 ```python
 import pandas
