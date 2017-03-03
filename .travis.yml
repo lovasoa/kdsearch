@@ -2,5 +2,4 @@ language: python
 python:
   - "3.5"
   - "nightly"
-install: "pip install -r requirements.txt"
-script: "./kdsearch/kdtree.py -v"
+script: "python -m unittest -v"
