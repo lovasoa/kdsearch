@@ -4,4 +4,4 @@ python:
   - "nightly"
   - "pypy3"
 install: "pip install --user -r requirements.txt"
-script: "./src/kdtree.py"
+script: "./src/kdtree.py -v"
